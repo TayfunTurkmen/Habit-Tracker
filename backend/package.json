@@ -1,0 +1,14 @@
+{
+  "name": "habit-tracker-backend",
+  "version": "1.0.0",
+  "description": "Backend for Habit Tracker MERN application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["habit", "tracker", "mern"],
+  "author": "",
+  "license": "ISC"
+}
