@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Habit Tracker MERN Application",
   "scripts": {
+    "dev": "concurrently \"cd backend && npm run server\" \"cd frontend && npm start\"",
     "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "build": "cd frontend && npm run build",
-    "start": "cd backend && npm start"
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd frontend && npm start",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-all && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
